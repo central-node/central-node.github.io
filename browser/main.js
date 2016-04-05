@@ -1,6 +1,10 @@
 $(function() {
+  var successMessage = 'El mensaje ha sido enviado correctamente';
+
+  if (/eng/.test(document.location.pathname))
+      successMessage = 'The message has been successfully sent';
+
   $('#contactForm').submit(function(event) {
-    console.log('entra');
     var name  = $('#name').val();
     var email = $('#email').val();
     var message = $('#message').val();
@@ -9,7 +13,7 @@ $(function() {
     .always(function(data) {
       $('#success').html("<div class=''>");
       $('#success')
-        .append("<strong>El mensaje ha sido enviado correctamente</strong>");
+        .append('<strong>' + successMessage + '</strong>');
       $('#success')
         .append('</div>');
 
