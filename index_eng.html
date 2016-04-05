@@ -154,7 +154,7 @@
           <p>If you want to contact us to either arrange a meetup, to ask for a new development or one of our aready developed tools, or any other reason, feel free to write here.</p>
           <div class="split style1">
             <section>
-              <form method="post" action="#">
+              <form id="contactForm" method="post">
                 <div class="field half first">
                   <label for="name">Name</label>
                   <input type="text" name="name" id="name" />
@@ -167,9 +167,8 @@
                   <label for="message">Message</label>
                   <textarea name="message" id="message" rows="5"></textarea>
                 </div>
-                <ul class="actions">
-                  <li><a href="" class="button submit">Send Message</a></li>
-                </ul>
+                <div id="success"></div>
+                <button type="submit" class="button submit">Send Message</button>
               </form>
             </section>
             <section>
@@ -220,6 +219,9 @@
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
+    <!--- custom scripts -->
+    <script src="assets/js/bundle.js"></script>
+
 
   </body>
 </html>

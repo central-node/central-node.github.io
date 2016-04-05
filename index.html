@@ -152,25 +152,27 @@
       <section id="three" class="wrapper style1 fade-up">
         <div class="inner">
           <h2>Contáctanos</h2>
-          <p>Si deseas contactárnos para agendar una reunión, preguntar por el desarrollo de un nuevo software o alguna de nuestras herramientas existentes, o cualquier otro motivo, envíanos un mensaje.</p>
+          <p>Si deseas contactárnos para agendar una reunión, preguntar por el desarrollo
+             de un nuevo software o alguna de nuestras herramientas existentes, o cualquier
+             otro motivo, envíanos un mensaje.
+          </p>
           <div class="split style1">
             <section>
-              <form method="post" action="#">
+              <form id="contactForm" method="post">
                 <div class="field half first">
                   <label for="name">Nombre</label>
                   <input type="text" name="name" id="name" />
                 </div>
                 <div class="field half">
                   <label for="email">Email</label>
-                  <input type="text" name="email" id="email" />
+                  <input type="email" name="email" id="email" />
                 </div>
                 <div class="field">
                   <label for="message">Mensaje</label>
                   <textarea name="message" id="message" rows="5"></textarea>
                 </div>
-                <ul class="actions">
-                  <li><a href="" class="button submit">Enviar Mensaje</a></li>
-                </ul>
+                <div id="success"></div>
+                <button type="submit" class="button submit">Enviar Mensaje</button>
               </form>
             </section>
             <section>
@@ -221,6 +223,8 @@
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
+    <!--- custom scripts -->
+    <script src="assets/js/bundle.js"></script>
 
   </body>
 </html>
